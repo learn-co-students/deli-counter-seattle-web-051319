@@ -8,13 +8,12 @@ def current_line(n)
   if n.length == 0
       return "The line is currently empty."
    else
-    for i= 0 i < n.length i++
+    for i = 0 i < n.length i +=
      people_in_line +=1 + '. ' + n[i] + ', '
    end
 end
     people_in_line = people_in_line.slice(0, people_in_line.length-2)
     return "The line is currently: " + people_in_line
-  end
 end
 
 def now_serving(n)
