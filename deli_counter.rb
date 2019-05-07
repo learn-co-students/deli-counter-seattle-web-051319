@@ -3,14 +3,14 @@ def take_a_number(katz_deli_line, name)
     return 'Welcome, ' + name + '.' + ' You are number ' + katz_deli_line.length + ' in line.'
 end
 
-def current_line(n) {
+def current_line(n)
   people_in_line = []
-  if (n.length === 0)
+  if n.length === 0
       return "The line is currently empty."
     end
     else
-    for (i= 0; i < n.length; i++)
-     people_in_line += (i + 1) + '. ' + n[i] + ', '
+    for i= 0; i < n.length; i++
+     people_in_line +=1 + '. ' + n[i] + ', '
     end
 end
     people_in_line = people_in_line.slice(0, people_in_line.length-2)
@@ -19,7 +19,7 @@ end
 end
 
 def now_serving(n)
-  if (n.length === 0) {
+  if n.length === 0
      return "There is nobody waiting to be served!"
    end
      else
