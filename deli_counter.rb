@@ -23,10 +23,10 @@ def now_serving(katz_deli)
   if katz_deli.length == 0
     puts "There is nobody waiting to be served!"
   else
-    name = katz_deli(0)
-    katz_deli.each_with_index do |name, index|
-    name += katz_deli.slice(0, 1);
+    name = "Currently serving"
+    katz_deli.each do |name|
+    name += katz_deli.pop
   end
-  puts "Currently serving" + name + '.'
+  puts name
  end
 end
