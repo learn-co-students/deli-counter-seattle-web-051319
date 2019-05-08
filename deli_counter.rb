@@ -13,8 +13,9 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     katz_deli.each do |name|
-     word = word + katz_deli.index(name)+1 +"#{name}"
+     word = word + "#{katz_deli.index()+1}" +"#{name}"
      #string interpolating and appending with index
+   end
   end
 end
 
