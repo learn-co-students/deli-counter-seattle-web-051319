@@ -8,14 +8,15 @@ def take_a_number(katz_deli, name)
 end
 
 def line(katz_deli)
-  word = "The line is currently:"
+
   if katz_deli.length == 0
+    word = "The line is currently:"
     puts "The line is currently empty."
   else
     katz_deli.each do |name|
-     word = word + "#{katz_deli.index()+1}" +"#{name}"
-     #string interpolating and appending with index
-   end
+     word = word += "#{katz_deli.index()+1}" +"#{name}"
+    end
+    puts word
   end
 end
 
