@@ -8,14 +8,14 @@ def take_a_number(katz_deli, name)
 end
 
 def line(katz_deli)
-  word = "The line is currently:"
+  other_deli = []
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
     katz_deli.each do |name|
-      word = word "#{katz_deli.index()+1}" "#{name}"
+      other_deli = "The line is currently:" "#{katz_deli.index()+1}" "#{name}."
     end
-    puts word
+    puts line(other_deli)
   end
 end
 
