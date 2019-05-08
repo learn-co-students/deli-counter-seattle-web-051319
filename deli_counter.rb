@@ -12,10 +12,10 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
-    katz_deli.each do |name|
-    word = word "#{katz_deli.index()+1}" "#{name}"
+    katz_deli.each_with_index do |name, index|
+    word += "#{index+1}" "#{name}"
     end
-    #puts word
+    puts word
   end
 end
 
